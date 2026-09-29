@@ -1,0 +1,52 @@
+{
+  "generated_from": "data/dev/teaching_docs_dev.db (private development bank)",
+  "tables": 65,
+  "rows_carried": 7330,
+  "rows_dropped": {
+    "content_change_ledger": 0
+  },
+  "columns_blanked": [
+    "content_item_evidence.evidence_text",
+    "content_item_math_validation_evidence.source_answer",
+    "knowledge_points.definition_text",
+    "question_curriculum_mapping_evidence.reason",
+    "question_internal_evidence.internal_payload",
+    "questions.analysis",
+    "questions.answer",
+    "questions.stem",
+    "source_content_blocks.normalized_text",
+    "source_content_blocks.raw_text",
+    "source_fragments.raw_text"
+  ],
+  "columns_shape_stubbed": [
+    "content_import_runs.selection_json",
+    "content_items.student_payload_json",
+    "question_auto_mapping_audit_logs.audit_json",
+    "question_auto_mapping_audit_logs.findings_json",
+    "question_auto_mapping_audit_logs.validator_results_json",
+    "question_curriculum_mapping_evidence.features_json",
+    "question_verifications.evidence_json",
+    "questions.options_json"
+  ],
+  "columns_path_neutralised": [
+    "controlled_content_sources.archive_path",
+    "controlled_content_sources.converted_path",
+    "controlled_content_sources.original_path",
+    "source_documents.original_relative_path",
+    "source_documents.relative_path"
+  ],
+  "kept_verbatim": [
+    "table structures",
+    "all annotation columns (difficulty, stage, grade_level, question_type, statuses)",
+    "source and page references as opaque tokens",
+    "all content hashes (sha256)",
+    "mapping, approval and evidence rows",
+    "curriculum_nodes.name and textbooks.name (public textbook catalogue labels)"
+  ],
+  "residual_cjk_runs_by_column": {
+    "textbooks.name": 29,
+    "curriculum_nodes.name": 178,
+    "selection_plans.shortages_json": 1,
+    "question_curriculum_mapping_evidence.features_json": 4
+  }
+}

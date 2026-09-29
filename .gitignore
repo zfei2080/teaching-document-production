@@ -16,6 +16,9 @@ data/history/
 output/
 images/
 source-documents/
+# ...except the packed text-stripped sample bank that ships with this edition.
+# The decompressed .db stays ignored so nobody commits 188 MB by accident.
+!data/sample/*.db.gz
 
 # Browser-side collection run data (kept local by whoever runs it)
 .work/

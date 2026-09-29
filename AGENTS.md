@@ -1,7 +1,9 @@
 # Agent / contributor instructions
 
-This is the open-source edition. It ships structure, logic, specifications and verification —
-**no question data, no source documents, no collection automation.**
+This is the open-source edition. It ships structure, logic, specifications and verification,
+plus a **text-stripped** real question bank (`data/sample/teaching_docs_sample_bank.db.gz`) —
+all question text, options wording, answers, explanations and source documents were removed,
+so **there is no third-party content here**. No collection automation is shipped either.
 
 Read in this order:
 

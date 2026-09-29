@@ -86,9 +86,12 @@ EXCLUDED_MODULES = {
     "test_api_pool.py": "requires an external API service and is not an offline gate",
     "test_pipeline.py": "archived pytest/API/visual pipeline; not a current production gate",
 }
-# This edition ships no question bank. The modules below take a snapshot of the
-# development database as their fixture, so they can only run against a bank you
-# created yourself. They are reported as skipped instead of silently passing.
+# This edition ships no question text. The modules below recompute or compare content
+# hashes over the question text that was removed from the sample banks, so they cannot
+# pass here even when a stripped bank is materialised (measured: 71 tests, 1 failure and
+# 28 errors). They stay skipped by name instead of silently passing or mysteriously failing.
+# A contributor who supplies their own licensed question text can move a module out of this
+# set; the fixture paths are prepared by tools/materialize_sample_bank.py.
 BANK_DEPENDENT_MODULES = frozenset({
     "test_content_knowledge_item_import",
     "test_content_library_extraction",
@@ -159,7 +162,8 @@ def main() -> int:
     print("dependency_profile=stdlib-only for included regression modules")
     print("included_behaviour=" + ",".join(RUNNABLE_MODULES))
     print("included_schema_migrations=" + ",".join(_SCHEMA_MIGRATION_MODULES))
-    print("bank_dependent_skipped=" + ",".join(sorted(BANK_DEPENDENT_MODULES)))
+    print("bank_dependent_skipped=" + ",".join(sorted(BANK_DEPENDENT_MODULES))
+          + " | reason: they hash question text that this edition does not ship")
     for name, reason in EXCLUDED_MODULES.items():
         print(f"excluded={name}: {reason}")
 
