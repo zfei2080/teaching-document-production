@@ -52,11 +52,14 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import pytest
+try:
+    import pytest
+except ModuleNotFoundError:
+    pytest = None  # markers only; these tests are plain unittest
 
 import tools.bootstrap_isolated_schema as bootstrap_mod
 
-pytestmark = pytest.mark.integration
+pytestmark = None if pytest is None else pytest.mark.integration
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 

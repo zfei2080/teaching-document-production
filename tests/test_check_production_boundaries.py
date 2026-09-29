@@ -18,9 +18,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import pytest
+try:
+    import pytest
+except ModuleNotFoundError:
+    pytest = None  # markers only; these tests are plain unittest and the L0 gate has no pytest
 
-pytestmark = pytest.mark.unit
+if pytest is not None:
+    pytestmark = pytest.mark.unit
 
 _TOOLS_PY = Path(__file__).resolve().parents[1] / "tools" / "check_production_boundaries.py"
 
