@@ -1,0 +1,28 @@
+# Minimal dependency-free L0 checks.
+#
+# The L0 command set uses only the Python standard library (compileall,
+# unittest) and the runner's preinstalled python3. There are no pip installs,
+# databases, source artifacts, browsers, credentials, or live-network
+# operations inside the workflow steps. See docs/governance/TEST_COMMAND_MAP.md (L0).
+
+name: L0 checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  l0:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check production-boundary checker
+        run: python3 -m compileall -q tools/check_production_boundaries.py
+      - name: Boundary checker unit tests
+        run: python3 -m unittest tests.test_check_production_boundaries
+      - name: Run production-boundary check
+        run: python3 tools/check_production_boundaries.py

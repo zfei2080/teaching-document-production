@@ -1,0 +1,2752 @@
+{
+    "document":  "docs/governance/LEGACY_MODULE_MANIFEST.json",
+    "work_order":  "ENGINEERING-BASELINE-001",
+    "generated_at":  "2026-08-14",
+    "method":  "read-only static inspection of root-level *.py files; ASCII token scans only (sqlite3.connect, __main__ guard, filename keywords); no source-question content read or recorded",
+    "counts":  {
+                   "root_python_modules":  267,
+                   "direct_sqlite3_connect_callers":  153,
+                   "executable_entrypoints":  199,
+                   "test_files":  97,
+                   "non_test_modules":  170
+               },
+    "classification_basis":  "All root Python modules are classified \u0027legacy\u0027; no narrower current classification exists in approved governance documents.",
+    "heuristics":  {
+                       "domain_guess":  "first-match filename keyword map below (wildcard contains); not verified against behavior",
+                       "domain_keywords":  {
+                                               "persistence":  [
+                                                                   "schema",
+                                                                   "database",
+                                                                   "progress_control",
+                                                                   "input_snapshot"
+                                                               ],
+                                               "intake":  [
+                                                              "intake",
+                                                              "registration",
+                                                              "source_",
+                                                              "artifact",
+                                                              "extraction",
+                                                              "discovery"
+                                                          ],
+                                               "eligibility":  [
+                                                                   "scope",
+                                                                   "valid",
+                                                                   "approval",
+                                                                   "gate",
+                                                                   "review",
+                                                                   "audit",
+                                                                   "eligib"
+                                                               ],
+                                               "supply":  [
+                                                              "import",
+                                                              "candidate",
+                                                              "mapping",
+                                                              "catalog",
+                                                              "knowledge",
+                                                              "segmentation",
+                                                              "dedupe",
+                                                              "library",
+                                                              "revision"
+                                                          ],
+                                               "selection":  [
+                                                                 "selection"
+                                                             ],
+                                               "documents":  [
+                                                                 "docx",
+                                                                 "lecture",
+                                                                 "document",
+                                                                 "render",
+                                                                 "crop",
+                                                                 "word_com",
+                                                                 "exam",
+                                                                 "writer",
+                                                                 "converter",
+                                                                 "forensics",
+                                                                 "materializer",
+                                                                 "pack",
+                                                                 "queue"
+                                                             ],
+                                               "delivery":  [
+                                                                "delivery",
+                                                                "usage",
+                                                                "virtual_classes",
+                                                                "class_progress"
+                                                            ]
+                                           },
+                       "executable_entrypoint":  "file contains an `if __name__ == \\\"__main__\\\":`-style guard (ASCII token scan, not execution)",
+                       "direct_sqlite3_connect":  "file contains the literal token sqlite3.connect (ASCII token scan, not AST-verified)"
+                   },
+    "records":  [
+                    {
+                        "path":  "apply_schema_v2_10.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_11.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_12.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_13.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_14.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_15.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_16.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_17.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_18.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_19.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_20.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_21.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_22.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_23.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_24.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_25.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_26.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_27.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_28.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_29.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_30.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_31.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_32.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_33.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_34.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_35.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_36.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_37.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_38.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_39.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_5.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_6.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_7.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_8.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "apply_schema_v2_9.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "artifact_validation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "asset_adjacency_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "asset_pipeline_proof.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "asset_semantics_validator.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "audit_candidate_consistency.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "audit_docx_candidates.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "audit_golden_sample.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "automatic_gate.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "automatic_verification_runner.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "batch_processor.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "bootstrap_virtual_classes.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "delivery",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "delivery",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "candidate_consistency.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "candidate_validation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "catalog_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "config.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "content_knowledge_item_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "content_library_extraction.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "content_question_candidate_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "content_question_revalidation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "content_question_validation_contract.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_asset_adjacency_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_catalog_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_content_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_content_revision_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_content_temp_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_doc_conversion.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_knowledge_mapping_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_question_mapping_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "controlled_question_source_derivation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "crop_questions.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "curriculum_progress_scope.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "database.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "docx_asset_materializer.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "docx_candidate_parser.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "docx_content_extractor.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "docx_forensics.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "docx_media_forensics.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "docx_writer.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "exam_structure_extractor.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "extractor.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "fidelity_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "fidelity_sample_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "fidelity_single_question_trace.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "generate_question_review_pack.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "generate_review_queue.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "golden_sample_scope_evaluation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "import_golden_sample.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "import_review_candidates.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "independent_math_validators.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "input_snapshot.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "knowledge_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "lecture_generator.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "legacy_entry_block.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "main.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "monitor.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "normalize_catalog_import_status.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "normalize_golden_candidate_types.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_2e_content_conversion_prerequisite_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_3_approval_precheck.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_3b_mapping_approval.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_3c_mapping_approval.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4_pilot_readiness_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4a_q013_admission.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_allowed_node_marker_gap_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_class_progress_scope_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_controlled_source_discovery.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_explicit_teaching_role_marker_discovery.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_isolated_auxiliary_content_contract_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_isolated_pedagogical_role_contract_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "p1_4b_isolated_source_derivation_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "parser.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "production_workflow.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "progress_control.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "prompts.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_asset_adjacency.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_auto_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_classifier.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_curriculum_mapping_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_scope_engine.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "question_scope_features.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "review_gate.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "review_workflow.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_batch_content_source_intake.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_classification_on_devdb.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_content_knowledge_item_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_content_question_candidate_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_content_source_extraction.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_content_source_registration.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_math_full_batch_validation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_math_model_comparison_pilot.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_math_validation_pilot.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_offline_regression.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_1a_draft_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_2_auto_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_2b_controlled_content_validation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_2c_temporary_content_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_2d_real_content_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_2e_content_conversion_prerequisite_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_2f_content_revision_import.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_3_approval_precheck.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_3a_knowledge_catalog.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_3a_q013_mapping_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_3b_q013_mapping_approval.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_3c_q013_mapping_approval.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4_pilot_readiness_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4a_q013_admission.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_allowed_node_marker_gap_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_class_progress_scope_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_controlled_source_discovery.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_explicit_teaching_role_marker_discovery.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_isolated_auxiliary_content_contract_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_isolated_pedagogical_role_contract_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_p1_4b_isolated_source_derivation_audit.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "run_simple.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "scope_progress_decision.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "selection_engine.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "selection",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "selection",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "snapshot_extsrc_all_math_catalogs.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "snapshot_extsrc_math_catalogs.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "source_content_knowledge_segmentation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "source_content_question_segmentation.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "source_family_dedupe.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "source_intake.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "source_library_intake.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_api_pool.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_artifact_validation.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_asset_pipeline_proof.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_asset_semantics_validator.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_automatic_gate.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_automatic_verification_runner.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_candidate_consistency.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_candidate_validation.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_catalog_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_class_progress_state_machine.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "delivery",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "delivery",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_content_knowledge_item_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_content_library_extraction.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_content_question_candidate_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_content_question_validation_contract.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_asset_adjacency.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_catalog_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_content_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_content_revision_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_content_temp_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_doc_conversion.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_knowledge_mapping.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_controlled_question_mapping_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_current_input_snapshot.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_curriculum_progress_scope.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_delivery_state_machine.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "delivery",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "delivery",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_docx_candidate_parser.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_docx_media_forensics.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_exam_structure_extractor.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_fidelity_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_fidelity_sample_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_fidelity_single_question_trace.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_golden_sample_scope_evaluation.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_import_review_candidates.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_independent_math_validators.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_legacy_entry_blocking.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_normalize_catalog_import_status.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_1a_draft_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_2e_content_conversion_prerequisite_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_3_approval_precheck.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_3b_mapping_approval.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_3c_mapping_approval.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4_pilot_readiness_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4a_q013_admission.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_allowed_node_marker_gap_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_class_progress_scope_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_controlled_source_discovery.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_explicit_teaching_role_marker_discovery.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_isolated_auxiliary_content_contract_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_isolated_pedagogical_role_contract_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_p1_4b_isolated_source_derivation_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_pipeline.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_production_workflow.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_progress_control.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_approval_state_machine.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_asset_adjacency.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_auto_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_classifier.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_curriculum_mapping_evidence.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_scope_engine.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_question_scope_features.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_review_gate.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_review_workflow.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_run_batch_content_source_intake.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_run_p1_2_auto_mapping_audit.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_run_p1_2f_content_revision_import.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "supply",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "supply",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_17.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_18.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_19.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_20.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_21.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_25.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_26.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_27.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_28.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_29.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_30.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_31.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_32.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_33.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_34.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_35.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_36.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_37.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_38.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_schema_v2_39.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "persistence",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "persistence",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_scope_progress_decision.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_selection_engine.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "selection",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "selection",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_source_content_question_segmentation.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_source_family_dedupe.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_source_intake.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_source_library_intake.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "intake",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "intake",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_textbook_scope_validator.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_verification_coverage_report.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_verification_registry.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "test_extsrc_clean_e2e.py",
+                        "category":  "legacy",
+                        "kind":  "test",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "textbook_filter.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "textbook_scope_validator.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "eligibility",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "eligibility",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "verification_coverage_report.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "verification_registry.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "verify_automatic_state.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "word_com_content_extractor.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  false,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "word_com_doc_converter.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "word_com_document_profile.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  false,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "extsrc_clean_e2e.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "unknown",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "unknown",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "extsrc_faithful_lecture.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    },
+                    {
+                        "path":  "extsrc_image_lecture.py",
+                        "category":  "legacy",
+                        "kind":  "module",
+                        "domain_guess":  "documents",
+                        "direct_sqlite3_connect":  true,
+                        "executable_entrypoint":  true,
+                        "candidate_replacement_domain":  "documents",
+                        "migration_rule":  "no movement without a dedicated adapter work order and contract evidence"
+                    }
+                ],
+    "fact_boundary":  "Path-level and token-level facts only, recorded on the date above. No code correctness, test coverage, production readiness, or behavioral claim is asserted from static analysis."
+}

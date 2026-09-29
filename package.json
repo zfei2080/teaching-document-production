@@ -1,0 +1,12 @@
+{
+  "name": "lecture-generator",
+  "version": "1.0.0",
+  "description": "初中数学讲义自动化生成系统",
+  "main": "docx_writer.py",
+  "scripts": {
+    "build": "python lecture_generator.py",
+    "batch": "python batch_processor.py"
+  },
+  "keywords": ["math", "lecture", "education"],
+  "license": "ISC"
+}

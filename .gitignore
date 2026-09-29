@@ -1,0 +1,22 @@
+# Local runtime state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Model credentials
+.secrets.json
+.env
+
+# Local question-bank data and source documents (never upload)
+*.db
+data/dev/
+data/history/
+output/
+images/
+source-documents/
+
+# Browser-side collection run data (kept local by whoever runs it)
+.work/
+ignored-local-output/

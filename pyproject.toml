@@ -1,0 +1,42 @@
+# ENGINEERING-BASELINE-001: minimal non-disruptive Python tooling surface.
+#
+# This file is the single configuration surface for newly created and
+# intentionally modified Python code. It makes no conformance, packaging, or
+# import-safety claim about the legacy root modules; see
+# docs/governance/ENGINEERING_BASELINE.md and
+# docs/governance/LEGACY_MODULE_MANIFEST.json.
+#
+# No dependency was installed, upgraded, removed, or pinned by this work order;
+# see docs/governance/DEPENDENCY_ENVIRONMENT_INVENTORY.md.
+
+[project]
+name = "teaching-docs"
+# Conservative declared minimum for future code only. NOT verified against
+# current local project usage (implementation environment observed Python
+# 3.13.14 on 2026-08-14); see DEPENDENCY_ENVIRONMENT_INVENTORY.md.
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+# Test taxonomy markers (L0-L4); see docs/governance/TEST_COMMAND_MAP.md.
+markers = [
+    "unit: deterministic unit tests (L1)",
+    "contract: contract validation tests (L1)",
+    "integration: isolated importer/schema/bridge integration (L2; future, depends on SCHEMA-AUTHORITY-001)",
+    "e2e: controlled end-to-end tests (L3/L4; future, requires approved inputs and gate evidence)",
+]
+# Keep default discovery so the existing root-level test suite is collected
+# unchanged, but never recurse into data, output or local scratch trees.
+norecursedirs = [
+    ".git",
+    ".claude",
+    ".venv",
+    "venv",
+    "node_modules",
+    ".pytest_cache",
+    "__pycache__",
+    "data",
+    "images",
+    "output",
+]
+# Make the repository root importable for the tests/ package hierarchy.
+pythonpath = ["."]
